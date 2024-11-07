@@ -2,6 +2,7 @@ import pdfkit
 import jinja2
 from datetime import datetime
 
+my_name = 'Sam Contreras'
 COY = 'Dan Campbell'
 CPOY = 'Kirk Cousins'
 DROY = 'Jared Verse'
@@ -12,7 +13,7 @@ MVP = 'Jared Goff'
 today_date = datetime.today().strftime("%d %b, %Y")
 
 context = {'COY': COY, 'CPOY': CPOY, 'DROY': DROY, 'OROY': OROY,
-           'DPOY': DPOY, 'OPOY': OPOY, 'MVP': MVP, 'today_date': today_date}
+           'DPOY': DPOY, 'OPOY': OPOY, 'MVP': MVP, 'my_name': my_name ,'today_date': today_date}
 
 template_loader = jinja2.FileSystemLoader('./')
 template_env = jinja2.Environment(loader=template_loader)
