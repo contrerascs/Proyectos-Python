@@ -7,10 +7,12 @@ mi_correo = 'sam.contreras@gmail.com'
 mi_direccion = '#13 Cornelia Street, NY'
 date_today = datetime.today().strftime('%d %b, %Y')
 
+#Creamos diccionario con datos estaticos
 doc = DocxTemplate(r'Automate-Word\sp-plantilla-rrhh-info.docx')
 my_context = {'mi_nombre': 'Sam Contreras', 'mi_numero': mi_numero,
            'mi_correo': mi_correo, 'mi_direccion': mi_direccion, 'fecha_hoy': date_today}
 
+#Creamos diccionario con datos dinamicos
 df = pd.read_csv(r'Automate-Word/test_data.csv')
 for index, fila in df.iterrows():
     context = {
