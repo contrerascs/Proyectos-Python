@@ -11,7 +11,7 @@ stylecloud.gen_stylecloud(file_path=r'WordCloud/TaylorSwift.txt',
                           icon_name='fas fa-rocket',
                           palette='cartocolors.sequential.Magenta_7',
                           background_color='black',
-                          output_name='TayTay.png',
+                          output_name=r'WordCloud/TayTay.png',
                           collocations=False,
                           custom_stopwords=palabras_irrelevantes)
 
