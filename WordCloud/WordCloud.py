@@ -16,7 +16,7 @@ stylecloud.gen_stylecloud(file_path=r'WordCloud/TaylorSwift.txt',
                           custom_stopwords=palabras_irrelevantes)
 
 #Creando nube de palabras con imagen propia
-my_mask = np.array(Image.open(r'WordCloud/TayTay.png'))
+my_mask = np.array(Image.open(r'WordCloud/Taylor_Swift.png'))
 wc = WordCloud(background_color='white',
                mask=my_mask,
                collocations=False,
