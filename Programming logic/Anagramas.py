@@ -1,8 +1,10 @@
-palabra1 = input(str(print('Dame la primer palabra')))
-palabra2 = input(str(print('Dame la segunda palabra')))
+# Solicitar las palabras del usuario
+palabra1 = input('Dame la primer palabra: ')
+palabra2 = input('Dame la segunda palabra: ')
 
-def recursividad(palabra):
-    return recursividad(palabra-1)
+# Eliminar espacios y convertir a minúsculas para comparar correctamente
+palabra1 = palabra1.replace(" ", "").lower()
+palabra2 = palabra2.replace(" ", "").lower()
 
 resultado = ''
 if len(palabra1) == len(palabra2):
