@@ -7,6 +7,7 @@ def recursividad(palabra):
 resultado = ''
 if len(palabra1) == len(palabra2):
     for letra in palabra1:
+        contador = 0
         for letra2 in palabra2:
             if letra == letra2:
                 palabra2 = palabra2.replace(letra2,'',1)
@@ -17,5 +18,11 @@ if len(palabra1) == len(palabra2):
                         break
                     else:
                         print('Las palabras no son Anagramas')
+                        break
+            if letra != letra2:
+                contador += 1
+                if contador == len(palabra1):
+                    print('Las palabras no son Anagramas')
+                    break
 else:
     print('Las palabras no son Anagramas')
