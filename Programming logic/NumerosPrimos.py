@@ -1,3 +1,4 @@
+#Funcion para analizar los numeros primos
 def num_primos(num):
     for numero in range(num):
         if numero == 0 :
