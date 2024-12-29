@@ -4,6 +4,7 @@ def palindromo(palabra):
     sin_espacios = palabra.replace(" ", "").lower()
     print(sin_espacios)
     comparacion = str('')
+    #Utilizamos un ciclo for para la comprobación
     for index,letra in enumerate(sin_espacios):
         if letra == sin_espacios[-(index+1)]:
             comparacion = comparacion+letra
