@@ -12,5 +12,9 @@ def pascal(n):
 
     return triangle
 
-num = int(input('Ingresa el tamaño de la piramide'))
-print(pascal(num))
+num = int(input('Ingresa el tamaño de la piramide: '))
+triangulo = pascal(num)
+
+#Imprimir triangulo
+for i in range(len(triangulo)):
+    print(triangulo[i])
