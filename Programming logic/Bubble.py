@@ -1,13 +1,12 @@
-def burbuja(lista):
-    for e,i in enumerate(lista):
-        if (e+1) == len(lista):
-            break
-        elif lista[e] >= lista[e+1]:
-            lista[e] = lista[e+1]
-            lista[e+1] = i
-            print(lista)
-        
-    print(lista)
+def burbuja(arreglo):
+    n = len(arreglo)
+
+    for i in range(n-1):       # <-- bucle padre
+        for j in range(n-1-i): # <-- bucle hijo
+            if arreglo[j] > arreglo[j+1]:
+                arreglo[j], arreglo[j+1] = arreglo[j+1], arreglo[j]
+    
+    return arreglo
 
 Lista = [9,8,7,6,5,4,3,2,1]
-burbuja(Lista)
+print(burbuja(Lista))
