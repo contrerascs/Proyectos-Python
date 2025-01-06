@@ -1,3 +1,4 @@
+#Creamos función de ordenamiento
 def burbuja(arreglo):
     n = len(arreglo)
 
